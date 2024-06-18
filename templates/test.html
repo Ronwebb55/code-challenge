@@ -1,0 +1,23 @@
+<head> FROM: ronwebb_55@hotmail.com <br> TO: brad.hein@sailpoint.com <br> SUBJECT: PR Challenge <br>
+</head>
+<br>
+<body>
+    <div style="float: left; width: 300px;">
+        <label style="font-size:40px;" >Number</label>
+        {%for i in to_send%}
+	    <p> {{i.Number}}</p>
+        {%endfor%}
+    </div>
+    <div style="float: left; width: 400px;">
+        <label style="font-size:40px;">Title</label>
+        {%for i in to_send%}
+	    <p> {{i.Title}}</p>
+        {%endfor%}
+    </div>
+    <div style="float: left; width: 100px;">
+        <label style="font-size:40px;" >State</label>
+        {%for i in to_send%}
+	    <p> {{i.State}}</p>
+        {%endfor%}
+    </div>
+</body>
