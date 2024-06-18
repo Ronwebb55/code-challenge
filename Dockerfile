@@ -13,5 +13,6 @@ COPY requirements.txt ./app
 RUN pip install -r ./app/requirements.txt
 
 COPY github-parser.py ./app
+COPY app.py   ./app
 WORKDIR /app
-CMD ["python", "github-parser.py"]
+CMD ["flask","run" "--port=5500"]
