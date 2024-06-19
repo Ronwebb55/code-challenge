@@ -10,8 +10,6 @@ access_token = os.environ["token"]
 owner = os.environ["repo_owner"]
 repo = os.environ["repo_name"]
 
-# GitHub Personal Access Token
-access_token = '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';
 
 # GitHub API endpoint for pull requests
 endpoint = f'https://api.github.com/repos/{owner}/{repo}/pulls'
