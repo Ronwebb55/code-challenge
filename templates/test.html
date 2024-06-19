@@ -5,19 +5,19 @@
     <div style="float: left; width: 300px;">
         <label style="font-size:40px;" >Number</label>
         {%for i in to_send%}
-	    <p> {{i.Number}}</p>
+	    <p> {{i.pr_number}}</p>
         {%endfor%}
     </div>
     <div style="float: left; width: 400px;">
         <label style="font-size:40px;">Title</label>
         {%for i in to_send%}
-	    <p> {{i.Title}}</p>
+	    <p> {{i.pr_title}}</p>
         {%endfor%}
     </div>
     <div style="float: left; width: 100px;">
         <label style="font-size:40px;" >State</label>
         {%for i in to_send%}
-	    <p> {{i.State}}</p>
+	    <p> {{i.pr_state}}</p>
         {%endfor%}
     </div>
 </body>

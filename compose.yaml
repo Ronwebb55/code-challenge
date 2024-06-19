@@ -1,0 +1,7 @@
+services:
+  parser:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8000:5500"
