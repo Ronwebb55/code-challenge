@@ -53,7 +53,7 @@ def get_github_pr():
             print(f'#{pr_number}: {pr_title} ({pr_state})')
         
             dict.append(item)
-    except:
-            print(f'Error fetching pull requests:')
+    except Exception as e:
+            print(f'Error fetching pull requests: ', e)
     return dict 
             

@@ -1,7 +1,20 @@
 services:
   parser:
+    image: python-github-parser
     build:
       context: ./
       dockerfile: Dockerfile
     ports:
-      - "8000:5500"
+      - "5500:5500"
+    environment:
+      - repo_owner=zpqrtbnk
+      - repo_name=test-repo
+    secrets:
+       - my_secret
+       - external_secret
+
+secrets:
+  external_secret:
+    file:  ./my_secret.txt
+  my_secret:
+    external: true
