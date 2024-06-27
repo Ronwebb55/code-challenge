@@ -8,6 +8,7 @@ ENV VIRTUAL_ENV=/app
 RUN python3 -m venv $VIRTUAL_ENV
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 
+
 WORKDIR /app
 COPY requirements.txt .
 COPY templates /app/templates
